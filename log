@@ -53,3 +53,17 @@ list.c:52:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 bacf526
+Fri 29 Mar 2024 05:59:47 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:52:5: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   52 |     return;
+      |     ^~~~~~
+list.c:47:8: note: declared here
+   47 | void * nextList(List * list) {
+      |        ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f7cc12f
